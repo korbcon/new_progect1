@@ -5,20 +5,53 @@
 <body>
 <h3>Определение пола по имени</h3>
 <?php
-$a='Мадама';//имя
-function sexid ($a)
-{
-    if (((substr($a, -2) == 'б') or (substr($a, -2) == 'в') or (substr($a, -2) == 'г')or (substr($a, -2) == 'д')
-        or (substr($a, -2) == 'ж') or (substr($a, -2) == 'з')or (substr($a, -2) == 'к')or (substr($a, -2) == 'л')
-        or (substr($a, -2) == 'м')or (substr($a, -2) == 'н')or (substr($a, -2) == 'п')or (substr($a, -2) == 'р')
-        or (substr($a, -2) == 'с')or (substr($a, -2) == 'т')or (substr($a, -2) == 'ф')or (substr($a, -2) == 'х')
-        or (substr($a, -2) == 'ц')or (substr($a, -2) == 'ч')or (substr($a, -2) == 'ш')or (substr($a, -2) == 'щ')
-        or ($a == 'Никита') or ($a == 'Савва') or ($a == 'Илья'))){
-        return '-мужчина';}
-        else {
-        return null;}
+$a='Мадема';//имя
+function sexid($a) {
+    if (substr($a, -2) == 'б') {
+        return '-мужчина';
+    } elseif (substr($a, -2) == 'в'){
+        return '-мужчина';
+    } elseif (substr($a, -2) == 'г'){
+        return '-мужчина';
+    } elseif (substr($a, -2) == 'д'){
+        return '-мужчина';
+    } elseif (substr($a, -2) == 'ж'){
+        return '-мужчина';
+    } elseif (substr($a, -2) == 'з'){
+        return '-мужчина';
+    } elseif (substr($a, -2) == 'к'){
+        return '-мужчина';
+    } elseif (substr($a, -2) == 'л'){
+        return '-мужчина';
+    } elseif (substr($a, -2) == 'м'){
+        return '-мужчина';
+    } elseif (substr($a, -2) == 'н'){
+        return '-мужчина';
+    } elseif (substr($a, -2) == 'п'){
+        return '-мужчина';
+    } elseif (substr($a, -2) == 'р'){
+        return '-мужчина';
+    } elseif (substr($a, -2) == 'с'){
+        return '-мужчина';
+    } elseif (substr($a, -2) == 'т'){
+        return '-мужчина';
+    } elseif (substr($a, -2) == 'ф'){
+        return '-мужчина';
+    } elseif (substr($a, -2) == 'х'){
+        return '-мужчина';
+    } elseif (substr($a, -2) == 'ц'){
+        return '-мужчина';
+    } elseif (substr($a, -2) == 'ч'){
+        return '-мужчина';
+    } elseif (substr($a, -2) == 'ш'){
+        return '-мужчина';
+    } elseif (substr($a, -2) == 'щ') {
+        return '-мужчина';
+    }    else {
+        return null;
+    }
 }
-echo $a,' ', sexid ($a);
+echo $a,' ',sexid ($a);
 assert( '-мужчина' == sexid('Аделаида'));
 var_dump (assert( '-мужчина' == sexid('Аделаида')));
 ?>
